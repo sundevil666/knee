@@ -1,0 +1,262 @@
+<template>
+    <div id="app">
+        <div class="wrapper">
+            <header class="d-flex justify-content-end">
+                <a href="/"><img src="./img/logo.png" alt="logo"></a>
+            </header>
+            <div class="bg_bord"></div>
+            <main>
+                <div class="slider1 position-relative">
+                    <div class="position-absolute w-100 h-100 title_price_box">
+                        <div class="title mt-2 text-center px-2">Наколенники-стабилизаторы  – необходимая помощь вашим коленным суставам</div>
+                        <div class="price_box mt-3 mx-4">
+                            <div class="price bg_red"><s>138 € </s></div>
+                            <div class="price bg_green">69€</div>
+                        </div>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        <ul class="carousel-inner">
+                            <li class="carousel-item" :class="index === 0 ? 'active' : ''" v-for="(item, index) in woman">
+                                <img class="d-block w-100" :src="getImgUrl('img', item.src)" alt="slide">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg_bord1"></div>
+                    <div class="col-12 item_box">
+                        <ul class="row">
+                            <li class=""><img class="img-fluid" src="./img/for_sl1.png" alt=""></li>
+                            <li class=""><img class="img-fluid" src="./img/for_sl2.png" alt=""></li>
+                            <li class=""><img class="img-fluid" src="./img/for_sl3.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scrin_2 col-12">
+                    <ul class="row">
+                        <li v-for="item in advantages" class="px-3">
+                            <img :src="getImgUrl('img', item.src)" :alt="item.title">
+                            <div class="title">{{ item.title }}</div>
+                            <div class="text">{{ item.text }}</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrin_3">
+                    <div class="box_form mx-3">
+                        <div class="head_form text-center py-2">
+                            <div>ЗАКАЗАТЬ</div>
+                            <div>СО СКИДКОЙ 50%</div>
+                        </div>
+                        <div class="col-12">
+                            <form action="" class="group row flex-column pt-3">
+                                <div class="col-12"><input type="text" v-model="inputChar" @keyup="onlyCharSet" class="form-control my-4" name="name" required placeholder="ВАШЕ имя"></div>
+                                <div class="col-12"><input type="number" class="form-control mb-4" name="tel" required placeholder="ваш телефон"></div>
+                                <div class="col-12 text-center"><input type="submit" class="btn btn_green mx-5 mt-3 mb-4" value="ЗАКАЗАТЬ СЕЙЧАС"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="knee_box">
+                    <img src="./img/knee_img.png" class="img-fluid" alt="knee">
+                </div>
+                <div class="scrin_4">
+                    <div class="col-12">
+                        <div class="title py-4">Почему важно защищать коленные суставы?</div>
+                        <p><b>На коленные суставы приходится самая высокая нагрузка</b>, так как они не только держат весь вес человека, но и обеспечивают необходимые движения. Именно поэтому
+                            <b>коленные суставы изнашиваются быстрее всех остальных</b>, чаще и сильнее болят. Среди всех хирургически удаляемых суставов коленные занимают первое место.</p>
+                        <div class="row pb-3"><img src="./img/knee_img1.png" class="img-fluid" alt="knee"></div>
+                        <p>Наколенники-стабилизаторы «Power Knee Stabilizer Pads» созданы для того, что снимать часть нагрузок с коленных суставов во время активных физических упражнений и тяжелой работе.</p>
+                        <p>Оба наколенника <b>снимают с суставов 40 кг веса</b>, а потому суставы дольше останутся здоровыми.</p>
+                        <p>Каждый наколенник имеет по 3 пружины оптимальной жесткости. Сами наколенники обеспечивают <b>максимальный комфорт при носке</b> и практически неощутимы.</p>
+                    </div>
+                </div>
+                <div class="video_5">
+                    <iframe src="https://player.vimeo.com/video/364527154" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                <div class="scrin_6">
+                    <div class="title pt-3 pb-4 px-3">Кому и когда рекомендуется использовать наколенники- стабилизаторы?</div>
+                    <ul class="px-3 pt-3">
+                        <li class="d-flex align-items-center mb-4 flex-wrap" v-for="item in problems">
+                            <img class="mx-auto" :src="getImgUrl('img', item.src)" :alt="item.title">
+                            <div class="wrap mx-auto">
+                                <div class="titl">{{ item.title }}</div>
+                                <div class="text">{{ item.text }}</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gif_7">
+                    <img src="./img/knee_gif.gif" class="img-fluid" alt="knee gif">
+                </div>
+                <div class="act_step_box scrin_8 p-4">
+                    <div class="title pb-5">Основные действия наколенников- стабилизаторов</div>
+                    <ul>
+                        <li class="li_style pb-4" v-for="item in act_step">{{ item.act }}</li>
+                    </ul>
+                </div>
+                <div class="scrin_9">
+                    <div class="title_green p-4">Почему еще стоит использовать наколенники- стабилизаторы?</div>
+                    <img src="./img/f8.png" alt="knee" class="img-fluid">
+                    <ul class="py-4">
+                        <li class="li_style pb-4" v-for="item in use">{{ item.li }}</li>
+                    </ul>
+                </div>
+                <div class="reviews_box scrin_10">
+                    <div class="title_green p-4">Что о наколенниках говорят покупатели?</div>
+                    <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        <ul class="carousel-inner px-3 py-5">
+                            <li class="carousel-item p-4 position-relative" :class="index === 0 ? 'active' : ''" v-for="(item, index) in reviews">
+                                <img class="d-block img-fluid mx-auto mb-4" :src="getImgUrl('img', item.src)" alt="slide">
+                                <div class="review_item mb-4">{{ item.review }}</div>
+                                <div class="review_name py-4"><b>{{ item.name }}</b></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="title p-4">Как заказать наколенники- стабилизаторы?</div>
+                    <ul class="p-4">
+                        <li class="li_style pb-4 d-flex" v-for="(item, index) in order"><span class="index d-flex justify-content-center align-items-center mr-4">{{ index + 1 }}</span>{{ item.li }}</li>
+                    </ul>
+                    <div class="box_form mx-3">
+                        <div class="head_form text-center py-2">
+                            <div>ЗАКАЗАТЬ</div>
+                            <div>СО СКИДКОЙ 50%</div>
+                        </div>
+                        <div class="col-12">
+                            <form action="" class="group row flex-column pt-3">
+                                <div class="col-12"><input type="text" v-model="inputChar" @keyup="onlyCharSet" class="form-control my-4" name="name" required placeholder="ВАШЕ имя"></div>
+                                <div class="col-12"><input type="number" class="form-control mb-4" name="tel" required placeholder="ваш телефон"></div>
+                                <div class="col-12 text-center"><input type="submit" class="btn btn_green mx-5 mt-3 mb-4" value="ЗАКАЗАТЬ СЕЙЧАС"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="copy p-4 text-right">© 1996-2019</div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+</template>
+
+<script>
+    export default {
+        name: 'app',
+        data() {
+            return {
+                inputChar: '',
+                woman: [
+                    {src: 'sl1.png'},
+                    {src: 'sl2.png'},
+                    {src: 'sl3.png'},
+                    {src: 'sl4.png'},
+                    {src: 'sl5.png'},
+                    {src: 'sl6.png'},
+                ],
+                advantages: [
+                    {
+                        src: 'advant1.png',
+                        title: 'Поддерживают',
+                        text: 'колено в правильном положении'
+                    },
+                    {
+                        src: 'advant2.png',
+                        title: 'Помогают',
+                        text: 'коленям разгибаться под нагрузкой'
+                    },
+                    {
+                        src: 'advant3.png',
+                        title: 'Защита',
+                        text: 'сустава от разрушений'
+                    },
+                    {
+                        src: 'advant4.png',
+                        title: 'Повышают',
+                        text: 'подвижность суставов в возрасте'
+                    },
+                ],
+                problems: [
+                    {
+                        src: 'probl1.png',
+                        title: 'Спортсменам',
+                        text: 'Если вы занимаетесь бегом, туризмом, велосипедным спортом или тяжелой атлетикой. '
+                    },
+                    {
+                        src: 'probl2.png',
+                        title: 'При тяжелой физической работе',
+                        text: 'Если вам приходится носить тяжелые грузы, или если вы много работаете в огороде, и вам приходится часто садиться на корточки.'
+                    },
+                    {
+                        src: 'probl3.png',
+                        title: 'Пенсионерам',
+                        text: 'Если суставы у вас уже износились, и вам трудно самостоятельно их разогнуть (сесть или встать)'
+                    },
+                    {
+                        src: 'probl4.png',
+                        title: 'При травмах и болезнях суставов',
+                        text: 'Если у вас артрит или артроз, вы перенесли операцию на коленный сустав или получили травму'
+                    },
+                ],
+                act_step: [
+                    {
+                        act: 'Облегчение нагрузки на коленные суставы'
+                    },
+                    {
+                        act: 'Помощь в разгибании суставов'
+                    },
+                    {
+                        act: 'Улучшение подвижности суставов'
+                    },
+                    {
+                        act: 'Повышение скорости восстановления суставов'
+                    },
+                    {
+                        act: 'Оздоровление суставов в любом возрасте'
+                    },
+                ],
+                use: [
+                    {li: 'Рекомендации ведущих ревматологов'},
+                    {li: 'Уникальная запатентованная технология (других подобных наколенников не существует)'},
+                    {li: 'Надежная фиксация сустава'},
+                    {li: 'Максимальный комфорт при ношении'},
+                    {li: 'Незаметны под брюками'},
+                    {li: 'Удобная липучка облегчает надевание'},
+                    {li: 'Дышащий тканевый материал'},
+                    {li: 'Производятся в Германии'},
+                ],
+                reviews: [
+                    {
+                        src: 'rev1.png',
+                        review: '«Отличный суппорт для коленей. Занимаюсь тяжелой атлетикой и без подобных суппортов нам нельзя. До этого использовал эластичные, потом увидел эти. Решил попробовать. Колени себя действительно заметно лучше стали чувствовать. Пропал страх за них. Стал поднимать больший вес. По качеству самих суппортов никаких нареканий – оно на высоте. Рекомендую всем! За такие деньги просто отличные наколенники!»',
+                        name: 'Михаил, 31 год, Москва'
+                    },
+                    {
+                        src: 'rev2.png',
+                        review: '«Покупала мужу-пенсионеру. Ему уже 74 года, колени больные. Не мог подняться даже с дивана сам, не говоря уже о корточках. Про данные наколенники узнала из газеты, там их рекомендовали такие же пенсионеры. Наколенники оказались очень хорошие – со своими функциями справляются. Муж встает сам. Даже показывал, как приседать в них может. Мы живем в небольшом городе. Доставили наколенники быстро. Оплатили курьеру – все очень удобно».',
+                        name: 'Людмила, 68 лет, Курчатов'
+                    },
+                    {
+                        src: 'rev3.png',
+                        review: '«Активный турист уже 20 лет, люблю путешествовать с рюкзаком. В начале этого года стало сильно болеть колено. Врач сказал, что суставы сильно изношены и посоветовал носить эти наколенники, пока они не восстановятся. Наколенники действительно снимают часть нагрузки и обеспечивают дополнительную амортизацию колена. Сами по себе наколенники выполнены качественно. Удобно держатся на ноге, ничего не перетягивая. В движении практически не ощутимы кожей, но зато дают эффект коленям. Всем кто занимается активными видами спорта, крайне рекомендую.',
+                        name: 'Павел, 44 года, Самара'
+                    }
+                ],
+                order: [
+                    {li: 'Оставьте заявку на нашем сайте'},
+                    {li: 'Мы перезвоним вам в течении 5 минут для подверждения заказа'},
+                    {li: 'Доставим товар курьером за 3-7 дней'},
+                ]
+            }
+        },
+        methods: {
+            getImgUrl(src, nameImg){
+                return require('/' + src + '/' + nameImg)
+            },
+            onlyCharSet() {
+                this.inputChar = this.inputChar.replace(/[^А-Яа-я]/g, '');
+            }
+        }
+    }
+</script>
+
+<style>
+
+</style>
