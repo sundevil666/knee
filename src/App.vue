@@ -16,8 +16,8 @@
                     </div>
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000">
                         <ul class="carousel-inner">
-                            <li class="carousel-item" :class="index === 0 ? 'active' : ''" v-for="(item, index) in woman">
-                                <img class="d-block w-100" :src="getImgUrl('img', item.src)" alt="slide">
+                            <li class="carousel-item" :class="index === 0 ? 'active' : ''" v-for="(item, index) in woman" :style="item">
+<!--                                <img class="d-block w-100" :src="getImgUrl('img', item.src)" alt="slide">-->
                             </li>
                         </ul>
                     </div>
@@ -133,7 +133,6 @@
                 </div>
             </main>
         </div>
-
     </div>
 </template>
 
@@ -144,12 +143,12 @@
             return {
                 inputChar: '',
                 woman: [
-                    {src: 'sl1.png'},
-                    {src: 'sl2.png'},
-                    {src: 'sl3.png'},
-                    {src: 'sl4.png'},
-                    {src: 'sl5.png'},
-                    {src: 'sl6.png'},
+                    {backgroundImage: 'url(./src/img/sl1.png)'},
+                    {backgroundImage: 'url(./src/img/sl2.png)'},
+                    {backgroundImage: 'url(./src/img/sl3.png)'},
+                    {backgroundImage: 'url(./src/img/sl4.png)'},
+                    {backgroundImage: 'url(./src/img/sl5.png)'},
+                    {backgroundImage: 'url(./src/img/sl6.png)'},
                 ],
                 advantages: [
                     {

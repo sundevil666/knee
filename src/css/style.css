@@ -69,9 +69,10 @@ header img {transform: translateY(15px); position: relative; z-index: 10;}
 .bg_green {background: linear-gradient(180deg, #DCEDA7 0%, #B0D837 49.38%, #A1D10F 49.38%, #89B801 100%); border: 1px solid #87B700; box-sizing: border-box; color: #FFFFFF; font-weight: bold;}
 .bg_red {background: linear-gradient(180deg, #FBBDB6 5%, #F87D6D 47.5%, #F76350 48.75%, #C73521 76.88%, #C73521 100%); border: 1px solid #D85747; box-sizing: border-box; color: #000;}
 
+.slider1 .carousel-inner li {height: 530px; background-position: 50% 0; background-repeat: no-repeat; width: 100%;}
 .slider1 .item_box {position: relative; z-index: 10;}
 .slider1 .item_box ul {position: absolute; width: 100%; bottom: -70px;}
-.slider1 .item_box li {padding: 0; flex:0 0 33%;}
+.slider1 .item_box li {padding: 0; flex:0 0 33%; width: 100%;}
 .slider1 .item_box li:nth-child(2) {transform: translateY(-50px);}
 
 .scrin_2, .footer {background: url(../img/bg_soty.png) 0 0;}
