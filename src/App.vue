@@ -100,7 +100,7 @@
                 <div class="reviews_box scrin_10">
                     <div class="title_green p-4">Что о наколенниках говорят покупатели?</div>
                     <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="5000">
-                        <ul class="carousel-inner px-3 py-5">
+                        <ul class="carousel-inner px-4 py-5">
                             <li class="carousel-item p-4 position-relative" :class="index === 0 ? 'active' : ''" v-for="(item, index) in reviews">
                                 <img class="d-block img-fluid mx-auto mb-4" :src="getImgUrl('img', item.src)" alt="slide">
                                 <div class="review_item mb-4">{{ item.review }}</div>
