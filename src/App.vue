@@ -156,7 +156,7 @@
                     {backgroundImage: 'url(./src/img/sl1.png)'},
                     {backgroundImage: 'url(./src/img/sl2.png)'},
                     {backgroundImage: 'url(./src/img/sl3.png)'},
-                    {backgroundImage: 'url(./src/img/sl4.png)'},
+                    // {backgroundImage: 'url(./src/img/sl4.png)'},
                     {backgroundImage: 'url(./src/img/sl5.png)'},
                     {backgroundImage: 'url(./src/img/sl6.png)'},
                 ],
