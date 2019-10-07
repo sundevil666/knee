@@ -107,6 +107,18 @@
                                 <div class="review_name py-4"><b>{{ item.name }}</b></div>
                             </li>
                         </ul>
+                        <a class="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
+                            <svg style="margin-left: -38px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" transform="rotate(-180 12 12)" fill="black" fill-opacity="0.3"/>
+                                <path d="M14.6087 4.174L7.30432 12.0001L14.6087 19.8262" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselSlides" role="button" data-slide="next">
+                            <svg style="margin-right: -38px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="black" fill-opacity="0.3"/>
+                                <path d="M9.39133 19.826L16.6957 11.9999L9.39133 4.17383" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="footer">
