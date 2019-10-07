@@ -22,9 +22,9 @@
                     <div class="bg_bord1"></div>
                     <div class="col-12 item_box">
                         <ul class="row">
-                            <li class=""><img class="img-fluid" src="./img/for_sl1.png" alt=""></li>
-                            <li class=""><img class="img-fluid" src="./img/for_sl2.png" alt=""></li>
-                            <li class=""><img class="img-fluid" src="./img/for_sl3.png" alt=""></li>
+                            <li class=""><img class="red_shadow" src="./img/for_sl1.png" alt=""></li>
+                            <li class=""><img class="green_shadow" src="./img/for_sl2.png" alt=""></li>
+                            <li class=""><img class="red_shadow" src="./img/for_sl3.png" alt=""></li>
                         </ul>
                     </div>
                 </div>

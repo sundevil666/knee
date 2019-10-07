@@ -74,7 +74,9 @@ header img {transform: translateY(15px); position: relative; z-index: 10;}
 .slider1 .item_box {position: relative; z-index: 10;}
 .slider1 .item_box ul {position: absolute; width: 100%; bottom: -70px;}
 .slider1 .item_box li {padding: 0; flex:0 0 33%; width: 100%;}
-.slider1 .item_box img {max-width: 150px; margin: 0 auto; width: 150px;}
+.green_shadow {box-shadow: 0 0 40px rgba(160, 208, 14, 0.7);}
+.red_shadow {box-shadow: 0 0 40px #C73521;}
+.slider1 .item_box img {max-width: 150px; margin: 0 auto; width: 150px; border-radius: 50%; overflow: hidden;}
 .slider1 .item_box li:nth-child(2) {transform: translateY(-50px);}
 
 .scrin_2, .footer {background: url(../img/bg_soty.png) 0 0;}
