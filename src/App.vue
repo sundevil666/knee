@@ -93,7 +93,7 @@
                 <div class="scrin_9">
                     <div class="title_green p-4">Почему еще стоит использовать наколенники- стабилизаторы?</div>
                     <img src="./img/f8.png" alt="knee" class="img-fluid">
-                    <ul class="py-4">
+                    <ul class="p-4">
                         <li class="li_style pb-4" v-for="item in use">{{ item.li }}</li>
                     </ul>
                 </div>

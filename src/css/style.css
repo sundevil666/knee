@@ -104,11 +104,11 @@ strong, b {font-weight: bold;}
 .video_5 {background: #000;}
 .scrin_6 img {max-width: 150px;}
 .scrin_6 .wrap {flex-basis: 265px;}
-.scrin_6 .title, .title_green {background: linear-gradient(113.63deg, #A0D00E 26.99%, #88B700 73.59%);}
+.scrin_6 .title, .title_green {background: linear-gradient(113.63deg, #A0D00E 26.99%, #88B700 73.59%); font-family: 'Montserrat', sans-serif;}
 .scrin_6 .title, .title_green, .footer li {color: #FFFFFF;}
 .scrin_6 li {text-align: center;}
 .scrin_6 li, .act_step_box li, .scrin_9 li, .reviews_box li, .scrin_4 p, .scrin_4 p, .title, .footer li {font-size: 18px; line-height: 24px;}
-.scrin_6 .titl {color: #99C11F; font-weight: 800;  text-transform: uppercase;}
+.scrin_6 .titl {color: #99C11F; font-weight: 800;  text-transform: uppercase; font-family: 'Montserrat', sans-serif;}
 .scrin_6 .text {color: #4F4F4F;}
 
 .act_step_box {background: #000;}
