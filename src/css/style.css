@@ -103,7 +103,7 @@ strong, b {font-weight: bold;}
 
 .video_5 {background: #000;}
 .scrin_6 img {max-width: 150px;}
-.scrin_6 .wrap {flex-basis: 100%;}
+.scrin_6 .wrap {flex-basis: 100%; text-align: center;}
 .scrin_6 .title, .title_green {background: linear-gradient(113.63deg, #A0D00E 26.99%, #88B700 73.59%); font-family: 'Montserrat', sans-serif;}
 .scrin_6 .title, .title_green, .footer li {color: #FFFFFF;}
 .scrin_6 li {text-align: center;}
@@ -121,7 +121,7 @@ strong, b {font-weight: bold;}
 .scrin_9 li {color: #4F4F4F; background: url(../img/li_style2.svg) no-repeat 0 4px;}
 
 .reviews_box {}
-.reviews_box .review_item {height: 305px;}
+.reviews_box .review_item {height: 560px;}
 .reviews_box li {font-style: italic; border-bottom: 3px solid #99C11F; border-left: 3px solid #99C11F; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); border-radius: 0 8px 0 0;}
 .reviews_box li:after {position: absolute; background: url(../img/rev_ico.svg) no-repeat #fff; display: block; width: 22px; height: 32px; top: 0; left: -3px; content: "";}
 .reviews_box img {max-width: 140px;}
@@ -137,7 +137,7 @@ strong, b {font-weight: bold;}
 @media (min-width: 465px) {
 	.scrin_6 li:nth-child(2n) img {order: 1;}
 	.scrin_6 li:nth-child(2n) .wrap {order: 0;}
-	.scrin_6 .wrap {flex-basis: 260px;}
+	.scrin_6 .wrap {flex-basis: 260px; text-align: left;}
 }
 
 
