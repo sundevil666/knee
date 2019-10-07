@@ -72,7 +72,7 @@
                 <div class="scrin_6">
                     <div class="title pt-3 pb-4 px-3">Кому и когда рекомендуется использовать наколенники- стабилизаторы?</div>
                     <ul class="px-3 pt-3">
-                        <li class="d-flex align-items-center mb-4 flex-wrap" v-for="item in problems">
+                        <li class="d-flex align-items-center mb-5 flex-wrap" v-for="item in problems">
                             <img class="mx-auto" :src="getImgUrl('img', item.src)" :alt="item.title">
                             <div class="wrap mx-auto">
                                 <div class="titl">{{ item.title }}</div>
