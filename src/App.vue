@@ -9,16 +9,14 @@
                 <div class="slider1 position-relative">
                     <div class="position-absolute w-100 h-100 title_price_box">
                         <div class="title mt-2 text-center px-2">Наколенники-стабилизаторы  – необходимая помощь вашим коленным суставам</div>
-                        <div class="price_box mt-3 mx-4">
+                        <div class="price_box mt-5 mx-4">
                             <div class="price bg_red"><s>138 € </s></div>
                             <div class="price bg_green">69€</div>
                         </div>
                     </div>
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000">
                         <ul class="carousel-inner">
-                            <li class="carousel-item" :class="index === 0 ? 'active' : ''" v-for="(item, index) in woman" :style="item">
-<!--                                <img class="d-block w-100" :src="getImgUrl('img', item.src)" alt="slide">-->
-                            </li>
+                            <li class="carousel-item" :class="index === 0 ? 'active' : ''" v-for="(item, index) in woman" :style="item"></li>
                         </ul>
                     </div>
                     <div class="bg_bord1"></div>
