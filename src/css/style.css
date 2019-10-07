@@ -126,7 +126,7 @@ strong, b {font-weight: bold;}
 .reviews_box li:after {position: absolute; background: url(../img/rev_ico.svg) no-repeat #fff; display: block; width: 22px; height: 32px; top: 0; left: -3px; content: "";}
 .reviews_box img {max-width: 140px;}
 
-.footer .index {width: 36px; min-width: 36px; min-height: 36px; height: 36px; border-radius: 50%; background: linear-gradient(108.1deg, #A0D00E 26.99%, #88B700 73.59%); box-shadow: 0px 0px 20px rgba(160, 208, 14, 0.8); font-weight: 900; font-size: 18px; line-height: 18px; color: #F2F2F2;}
+.footer .index {transform: translateY(-7px); width: 36px; min-width: 36px; min-height: 36px; height: 36px; border-radius: 50%; background: linear-gradient(108.1deg, #A0D00E 26.99%, #88B700 73.59%); box-shadow: 0px 0px 20px rgba(160, 208, 14, 0.8); font-weight: 900; font-size: 18px; line-height: 18px; color: #F2F2F2;}
 
 .copy {font-size: 12px; line-height: 21px; color: rgba(255, 255, 255, 0.5);}
 @media (max-width: 470px) {
