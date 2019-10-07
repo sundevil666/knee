@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800&display=swap');
 /* Eric Meyer's CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,7 +62,7 @@ header {background: url(../img/bg_head.png) no-repeat 50% 0; background-size:100
 header img {transform: translateY(15px); position: relative; z-index: 10;}
 
 .title_price_box {z-index: 100; margin-top: 27px;}
-.title {font-weight: bold; font-size: 18px; line-height: 25px; text-transform: uppercase;}
+.title {text-transform: uppercase; font-family: 'Montserrat', sans-serif;}
 .bg_bord {background: linear-gradient(179.27deg, #F76250 26.99%, #C73521 73.59%); height: 1px;}
 .bg_bord1 {background: #8F2011; height: 3px;}
 
@@ -73,12 +74,13 @@ header img {transform: translateY(15px); position: relative; z-index: 10;}
 .slider1 .item_box {position: relative; z-index: 10;}
 .slider1 .item_box ul {position: absolute; width: 100%; bottom: -70px;}
 .slider1 .item_box li {padding: 0; flex:0 0 33%; width: 100%;}
+.slider1 .item_box img {max-width: 150px; margin: 0 auto; width: 150px;}
 .slider1 .item_box li:nth-child(2) {transform: translateY(-50px);}
 
 .scrin_2, .footer {background: url(../img/bg_soty.png) 0 0;}
 .scrin_2 ul {padding-top: 30px;}
 .scrin_2 li {margin: 20px auto; max-width: 200px; text-align: center; font-size: 18px; line-height: 20px; color: #fff;}
-.scrin_2 li .title {font-weight: 800; text-transform: uppercase; color: #99C11F; margin-bottom: 10px;}
+.scrin_2 li .title {color: #99C11F; margin-bottom: 10px;}
 
 .scrin_3 {background: #000000;}
 .box_form {border: 1px solid #87B700; box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); border-radius: 8px; overflow: hidden; background: linear-gradient(149.6deg, #F0F0F0 23.72%, #DBDBDB 89.35%);}
@@ -105,7 +107,7 @@ strong, b {font-weight: bold;}
 .scrin_6 .title, .title_green {background: linear-gradient(113.63deg, #A0D00E 26.99%, #88B700 73.59%);}
 .scrin_6 .title, .title_green, .footer li {color: #FFFFFF;}
 .scrin_6 li {text-align: center;}
-.scrin_6 li, .act_step_box li, .scrin_9 li, .reviews_box li, .scrin_4 p, .scrin_4 p, .scrin_2 li .title, .footer li {font-size: 18px; line-height: 24px;}
+.scrin_6 li, .act_step_box li, .scrin_9 li, .reviews_box li, .scrin_4 p, .scrin_4 p, .title, .footer li {font-size: 18px; line-height: 24px;}
 .scrin_6 .titl {color: #99C11F; font-weight: 800;  text-transform: uppercase;}
 .scrin_6 .text {color: #4F4F4F;}
 
@@ -124,7 +126,7 @@ strong, b {font-weight: bold;}
 .footer .index {width: 36px; min-width: 36px; min-height: 36px; height: 36px; border-radius: 50%; background: linear-gradient(108.1deg, #A0D00E 26.99%, #88B700 73.59%); box-shadow: 0px 0px 20px rgba(160, 208, 14, 0.8); font-weight: 900; font-size: 18px; line-height: 18px; color: #F2F2F2;}
 
 .copy {font-size: 12px; line-height: 21px; color: rgba(255, 255, 255, 0.5);}
-@media (max-width: 400px) {
+@media (max-width: 470px) {
 	.slider1 .item_box li:nth-child(3) {display: none;}
 	.slider1 .item_box li {padding: 0; flex:0 0 50%;}
 }
